@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Full stack developer | Yarragondla Anusha</title>
+  </head>
+
+  <body>
+    <!-- TOP BAR: slim bar with 3-line icon and quick contacts -->
+    <div class="topbar" role="region" aria-label="Top bar">
+      <button
+        id="topbar-menu-btn"
+        class="topbar-menu-btn"
+        aria-label="Open menu"
+        aria-controls="topbar-dropdown"
+        aria-expanded="false"
+      >
+        <i class="ri-menu-3-line" aria-hidden="true"></i>
+      </button>
+
+      <div class="topbar-quick">
+        <a href="tel:+919493160222" class="topbar-link" aria-label="Phone"
+          >+91 94931 60222</a
+        >
+        <a
+          href="mailto:yerragundlaanusha@gmail.com"
+          class="topbar-link"
+          aria-label="Email"
+          >yerragundlaanusha@gmail.com</a
+        >
+      </div>
+
+      <!-- Topbar dropdown (shows same main links without changing main nav) -->
+      <div id="topbar-dropdown" class="topbar-dropdown" role="menu" aria-hidden="true">
+        <ul>
+          <li role="none"><a role="menuitem" href="#home">Home</a></li>
+          <li role="none"><a role="menuitem" href="#about">About</a></li>
+          <li role="none"><a role="menuitem" href="#skills">My Skills</a></li>
+          <li role="none"><a role="menuitem" href="#portfolio">Portfolio</a></li>
+          <li role="none"><a role="menuitem" href="#contact" class="btn nav-contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- MAIN NAV (kept as-is) -->
+    <nav role="navigation" aria-label="Main navigation" class="main-nav">
+      <div class="nav__bar">
+        <a href="#" class="brand">
+          <span class="logo nav__logo">A</span>Yarragondla Anusha
+        </a>
+
+        <button
+          id="menu-btn"
+          class="nav__menu__btn"
+          aria-controls="nav-links"
+          aria-expanded="false"
+          aria-label="Toggle menu"
+        >
+          <i class="ri-menu-3-line" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <!-- nav__links is a dropdown anchored under the topbar on desktop, full-width on mobile -->
+      <ul class="nav__links" id="nav-links" role="menu" aria-label="Main links">
+        <li role="none"><a role="menuitem" href="#home">Home</a></li>
+        <li role="none"><a role="menuitem" href="#about">About</a></li>
+        <li role="none"><a role="menuitem" href="#skills">My Skills</a></li>
+        <li role="none"><a role="menuitem" href="#portfolio">Portfolio</a></li>
+        <li role="none"><a role="menuitem" href="#contact" class="btn nav-contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header class="section__container header__container" id="home">
+      <div class="header__image image-shape--round">
+        <img src="assets/header.jpg" alt="Portrait of Yarragondla Anusha" />
+      </div>
+
+      <div class="header__content">
+        <h1>Full Stack Developer<br />Yarragondla ANUSHA</h1>
+
+        <p class="section__description">
+          <strong>I am a proficient full stack developer who enjoys turning ideas into
+          working products. I'm good at problem solving and debugging.</strong>
+        </p>
+
+        <div class="header__contact" aria-label="Contact details">
+          <p><strong>Phone:</strong> <a href="tel:+919493160222">+91 94931 60222</a></p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:yerragundlaanusha@gmail.com">yerragundlaanusha@gmail.com</a>
+          </p>
+          <p>
+            <strong>WhatsApp:</strong>
+            <a href="https://wa.me/919493160222" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+          </p>
+        </div>
+
+        <div class="header__btn">
+          <a class="btn" href="#contact">Hire Me Now</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section class="section__container about__container" id="about">
+      <div class="about__image image-shape--card">
+        <img src="assets/about.jpg" alt="About image of Yarragondla Anusha" class="about__img" />
+      </div>
+
+      <div class="about__content">
+        <h2 class="section__header">Bit About Me</h2>
+        <p class="section__description">
+          I am a proficient full stack developer who enjoys turning ideas into
+          working products. I write maintainable code, focus on user experience,
+          and constantly learn new tools and techniques.
+        </p>
+
+        <!-- Download CV centered above skills -->
+        <div class="about__btn about__btn--center">
+          <a
+            href="https://drive.google.com/file/d/1rNk1pceNYjqb1N421cOfwt9UvpOSn15_/view?usp=sharing"
+            class="btn cv-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Download CV</a
+          >
+        </div>
+
+        <div class="about__skills">
+          <h3 class="sr-only">Core skills</h3>
+          <ul class="about-skills-list" aria-hidden="false">
+            <li>Python</li>
+            <li>SQL</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section__container service__container" id="skills">
+      <h2 class="section__header">My Skills</h2>
+
+      <div class="service__grid">
+        <div class="service__card" tabindex="0" aria-label="Python skill">
+          <h4><strong>Python</strong></h4>
+          <p>Backend scripting, data processing and building APIs with Flask/Django.</p>
+        </div>
+
+        <div class="service__card" tabindex="0" aria-label="SQL skill">
+          <h4><strong>SQL</strong></h4>
+          <p>Database design, advanced queries, and performance tuning for scalable apps.</p>
+        </div>
+
+        <div class="service__card" tabindex="0" aria-label="HTML skill">
+          <h4><strong>HTML</strong></h4>
+          <p>Semantic, accessible markup and SEO-friendly structure for reliable UI.</p>
+        </div>
+
+        <div class="service__card" tabindex="0" aria-label="CSS skill">
+          <h4><strong>CSS</strong></h4>
+          <p>Responsive layouts using Flexbox/Grid and polished, modern visuals.</p>
+        </div>
+
+        <div class="service__card" tabindex="0" aria-label="JavaScript skill">
+          <h4><strong>JavaScript</strong></h4>
+          <p>Modern ES6+, DOM, async calls and integration with frontend frameworks.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="section__container portfolio__container" id="portfolio">
+      <h2 class="section__header portfolio-header">My Portfolio</h2>
+      <p class="section__description">Explore my projects below.</p>
+
+      <div class="portfolio__grid">
+        <div class="portfolio__card">
+          <div class="portfolio__media">
+            <img src="assets/project-1.jpg" alt="Automatic man machine dialogue recognition" />
+            <div class="portfolio__overlay"></div>
+          </div>
+          <div class="portfolio__caption">
+            <h4>Automatic Man-Machine Dialogue Recognition</h4>
+            <p>Using Deep Q Network</p>
+          </div>
+        </div>
+
+        <div class="portfolio__card">
+          <div class="portfolio__media">
+            <img src="assets/project-2.jpg" alt="Anti sleeping glasses" />
+            <div class="portfolio__overlay"></div>
+          </div>
+          <div class="portfolio__caption">
+            <h4>Anti Sleeping Glasses</h4>
+            <p>Wearable safety device project</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects + Soft Skills -->
+      <div class="portfolio__banner" aria-hidden="false">
+        <div class="portfolio__banner__card">
+          <span><i class="ri-macbook-line" aria-hidden="true"></i></span>
+          <h4>Projects</h4>
+          <p>2 key projects</p>
+        </div>
+
+        <div class="portfolio__banner__card soft-skills-card" aria-label="Soft skills">
+          <h4>Soft Skills</h4>
+          <ul class="soft-skills-list">
+            <li>Learning new things</li>
+            <li>Critical thinking</li>
+            <li>Smart work</li>
+            <li>Problem solving</li>
+            <li>Teamwork</li>
+            <li>Time management</li>
+            <li>Adaptability</li>
+            <li>Communication</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section__container contact__container" id="contact">
+      <div class="contact-grid">
+        <aside class="contact-left">
+          <div class="info-box">
+            <div class="info-icon"><i class="ri-mail-line" aria-hidden="true"></i></div>
+            <div class="info-body">
+              <h5>Email</h5>
+              <p><a href="mailto:yerragundlaanusha@gmail.com">yerragundlaanusha@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <div class="info-icon"><i class="ri-map-pin-line" aria-hidden="true"></i></div>
+            <div class="info-body">
+              <h5>Location</h5>
+              <p>Kadiri, AP, India</p>
+            </div>
+          </div>
+
+          <div class="connect-box">
+            <h5>Connect With Me</h5>
+
+            <div class="connect-item">
+              <i class="ri-github-line" aria-hidden="true"></i>
+              <div>
+                <div class="connect-title">GitHub</div>
+                <div class="connect-sub"><a href="https://github.com/Anuanusha258" target="_blank" rel="noopener noreferrer">@Anuanusha258</a></div>
+              </div>
+            </div>
+
+            <div class="connect-item">
+              <i class="ri-linkedin-box-line" aria-hidden="true"></i>
+              <div>
+                <div class="connect-title">LinkedIn</div>
+                <div class="connect-sub"><a href="https://www.linkedin.com/in/yarragondla-anusha-3bab15282" target="_blank" rel="noopener noreferrer">Connect with me</a></div>
+              </div>
+            </div>
+
+            <div class="connect-item">
+              <i class="ri-file-download-line" aria-hidden="true"></i>
+              <div>
+                <div class="connect-title">Resume</div>
+                <div class="connect-sub"><a href="https://drive.google.com/file/d/1rNk1pceNYjqb1N421cOfwt9UvpOSn15_/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download CV</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="education-box">
+            <div class="edu-icon"><i class="ri-book-mark-line" aria-hidden="true"></i></div>
+            <div class="edu-body">
+              <h5>Education</h5>
+              <p><strong>Saveetha University, Chennai</strong></p>
+              <p>Batch 2021 - 2025 • CGPA 8.4</p>
+            </div>
+          </div>
+        </aside>
+
+        <div class="contact-right">
+          <h2 class="section__header">Let's Work Together</h2>
+          <p class="section__description">
+            <strong>Ready to hire? Quick learner, dependable, and eager to help your team build great software.</strong>
+          </p>
+
+          <div class="contact-form">
+            <form id="contact-form" action="#" novalidate>
+              <div class="form-row">
+                <label>Full Name *</label>
+                <input type="text" name="name" placeholder="Your full name" required />
+              </div>
+
+              <div class="form-row">
+                <label>Email Address *</label>
+                <input type="email" name="email" placeholder="your.email@example.com" required />
+              </div>
+
+              <div class="form-row full">
+                <label>Your Message *</label>
+                <textarea name="message" rows="6" placeholder="Tell me about your project, ideas, or just say hello..." required></textarea>
+              </div>
+
+              <div class="form-row full">
+                <button type="submit" class="btn send-btn">
+                  <i class="ri-send-plane-2-line" aria-hidden="true"></i> Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      Copyright © <span id="footer-year">2025</span> Yarragondla Anusha. All rights reserved.
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js" defer></script>
+  </body>
+</html>
